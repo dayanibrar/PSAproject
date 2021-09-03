@@ -1,13 +1,430 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css');
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://use.typekit.net/vpn5kdk.css');
+@import url('https://use.typekit.net/vpn5kdk.css');
+@import url('https://use.typekit.net/vpn5kdk.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* NAVBAR  */
+
+.navbarmain
+{
+  /* padding: 3rem 5rem; */
+  z-index: 1000;
+  border-bottom: 5px solid rgb(213, 213, 13);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox 
+                                  font-family: 'Ubuntu', sans-serif;
+                                  font-family: 'Oxygen', sans-serif;
+
+                                  */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navli {
+  font-size:17px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+
+.navbarbrand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3B3B3B;
+  text-align: center;
+  float: left;
+  /* padding: 15px;
+  text-align: center;
+  width: 100%; */
+
+
+}
+
+.headtextxa {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #25E594;
+  transition: 0.2s;
+  /* text-align: center; */
+}
+/* 
+.dashboardbutton {
+background: rgb(7,240,138);
+background: linear-gradient(90deg, rgba(7,240,138,1) 0%, rgba(17,184,178,1) 100%);
+color: white;
+border-radius: 10px;
+}
+
+.dashboardbutton:hover{
+  background: rgb(7,240,138);
+  background: linear-gradient(90deg, rgb(7, 240, 7) 0%, rgb(17, 184, 112) 100%);
+  color: white;
+  border-radius: 10px;
+  
+} */
+
+
+.btn-hover {
+  width: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+   height: 40px;
+  text-align:center;
+  border: none; 
+  background-size: 300% 100%;
+  border-radius: 10px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #e1cb25, #eb5a39, #eb715c, #f0e914);
+  box-shadow: 0 4px 15px 0 rgba(254, 254, 11, 0.591);
+}
+
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 5.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  
+  flex-wrap: nowrap;
+  padding-bottom: 5rem;
+  margin-top: 25px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, .75);
+  text-align: left;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Heading-Home  */
+
+mid {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.mainheading {
+  /* font-family: bely-display, sans-serif; */
+  
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 2px 2px #3d3d3da4;
+  font-size: 3rem;
+  color: azure;
+  margin-top: 100px;  
+  text-align: center;
+  padding: 5% 10%;
+  
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+/* .cursive {
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 2px 2px #3d3d3da4;
+  font-size: 3rem;
+  padding: 1% 7%;
+  color: azure;
+} */
+
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  
+}
+
+.home-name {
+  font-size: 50px;
+}
+
+/* Carousel Headers Section*/
+.caroselimages {
+  width: 100%;
+  height: 300px;
+}
+
+.Welcomemessageone {
+  margin-top: -50px;
+}
+
+.optionsbuttonsone {
+  margin: 0 10px;
+}
+
+
+.btn-hover2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  text-align:center;
+  border: none; 
+  background-size: 300% 100%;
+  border-radius: 10px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  width: 25%;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.btn-hover2:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover2:focus {
+  outline: none;
+}
+
+.btn-hover2.color-2 {
+  background-image: linear-gradient(to right, #25e1c5, #39eb71, #5ceb95, #14f0b5);
+  box-shadow: 0 4px 15px 0 rgba(11, 254, 246, 0.31);
+}
+
+.inpagescroller{
+  border-radius: 10px;
+  border-bottom: 5px solid rgb(6, 165, 96);
+}
+
+/* GUIDES SECTION */
+.headingguidesmain {
+  text-decoration: underline;
+  padding: 105px;
+}
+
+.headingwelcome {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+}
+
+.parawelcome {
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+
+.homelandingarea {
+  padding:5% 5% ;
+}
+
+/* Welome landing */
+.welcomesection {
+  margin-top: 200px !important;
+}
+
+.imageone {
+  height: 50px;
+  width: 50px;
+  border-top: 5px solid #14f0b5;
+}
+
+.gradientheading{
+  background-color: red;
+  letter-spacing: 1px;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(180deg, #f3ef78, #af9642);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.socialbutton {
+  margin: 10px 10px;
+}
+
+.footerlink {
+  text-decoration: none;
+}
+
+
+.gradientheading2{
+  background-color: red;
+  letter-spacing: 1px;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(180deg, #f3ef78, #af9642);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.paratext {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Media Queries section */
+
+@media only screen and (max-width:1200px) {
+
+  .homelandingarea {
+    margin-top: 100px;
+  }
+
+}
+
+@media only screen and (max-width:700px) {
+
+  .mainheading {
+    text-align: left;
+    padding: 5% 10%;
+  }
+
+  .Welcomemessageone {
+    margin-top: -10px;
+  }
+
+  .btn-hover2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none; 
+    background-size: 300% 100%;
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    width: 50%;
+  }
+
+  .homelandingarea {
+    margin-top: 100px;
+  }
+
+  
+  
+
+  
+}
+
+@media only screen and (max-width:575px) {
+  .mainheading {
+    font-family: bely-display, sans-serif;
+    text-shadow: 2px 2px #3d3d3da4;
+    font-size: 2.7rem;
+    text-align: left;
+    color: azure;
+    margin-top: 60px; 
+    padding: 5% 5%; 
+    
+  }
+
+  .homelandingarea {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .mainheading {
+    font-family: bely-display, sans-serif;
+    text-shadow: 2px 2px #3d3d3da4;
+    font-size: 2.3rem;
+    text-align: left;
+    color: azure;
+    margin-top: 60px; 
+    padding: 5% 5%; 
+  }
+
+  .homelandingarea {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width:350px) {
+  .mainheading {
+    font-family: bely-display, sans-serif;
+    text-shadow: 2px 2px #3d3d3da4;
+    font-size: 2.1rem;
+    text-align: left;
+    color: azure;
+    margin-top: 80px; 
+    padding: 1% 5%; 
+  }
 }
