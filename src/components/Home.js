@@ -19,7 +19,7 @@ export default function Home() {
             </mid>
             {/* <hero className="text-center relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8"> */}
             <hero className="text-center relative flex justify-center heading pt-5">
-            <h1 className="mainheading mx-auto text-6xl font-bold leading-none lg:leading-snug  text-light">Entrepreneurship</h1>
+            <h1 className="mainheading mx-auto text-6xl font-bold leading-none lg:leading-snug  text-light">Entrepreneurship by Dayan Ibrar</h1>
             </hero>
             </header>
            

@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Footerplain from "./components/Footer";
 import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
+import AdBar from "./components/Ad";
 
 
 
@@ -14,6 +15,7 @@ import { SocialIcon } from 'react-social-icons';
 function App() {
   return (
   <BrowserRouter>
+   <AdBar />
   <NavBar />
   <Switch>
   <Route component={Home} path='/' exact />
